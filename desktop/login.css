@@ -1,0 +1,325 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("assets/fonts/Inter-Regular.otf");
+}
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("assets/fonts/Inter-Medium.otf");
+}
+@font-face {
+  font-family: "Inter-Light";
+  src: url("assets/fonts/Inter-Light.otf");
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("assets/fonts/Inter-Bold.otf");
+}
+* {
+  font-family: Inter-Regular;
+  font-size: 14px;
+  color: #2e3845;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(assets/ctu_argao_banner_600px.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+}
+
+#loading_animation_gif {
+  height: 50px;
+  width: 50px;
+}
+
+#parsing_lbl {
+  font-family: Inter-Regular;
+  color: #f30505;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.nofeature {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Inter-Bold";
+  overflow: hidden;
+  z-index: 1000;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nofeature-wrapper {
+  width: 70%;
+  height: 100px;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#login_div {
+  width: 30%;
+  height: 100%;
+  background-color: transparent;
+  display: none;
+  margin-top: 4%;
+}
+
+#header_login_div {
+  width: 100%;
+  height: 90px;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#body_login_div {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+#footer_login_div {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-top: 25px;
+}
+
+#parseit_icon_img {
+  width: 35px;
+  height: 35px;
+}
+
+#createaccount_btn {
+  border: none;
+  background-color: #007aff;
+  height: 30px;
+  width: 130px;
+  border-radius: 40px;
+  color: #fefefe;
+  font-size: 14px;
+  z-index: 1;
+  font-family: Inter-Regular;
+}
+
+#title_body_login_div {
+  height: 30%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+
+#title_body_login_lbl {
+  margin-bottom: 10px;
+  font-size: 46px;
+  font-family: Inter-Medium;
+  color: #000000;
+}
+
+#subtitle_body_login_lbl {
+  font-size: 22px;
+  font-family: Inter-Light;
+  /* color: #b6b6b6; */
+  color: #2e3845;
+}
+
+#id_container {
+  display: flex;
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 7px;
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  overflow: hidden;
+}
+#password_container {
+  display: flex;
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 7px;
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+#login_btn {
+  display: flex;
+  background-color: #f30505;
+  border: none;
+  border-radius: 7px;
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  color: #fefefe;
+  font-family: Inter-Medium;
+}
+
+#id_txt,
+#password_txt {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  padding-left: 15px;
+  color: #2e3845;
+}
+
+#id_txt:focus,
+#password_txt:focus {
+  width: 100%;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: #000000;
+  outline: none;
+  text-decoration: none;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#showpass_btn {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#showpass_img {
+  width: 25px;
+  margin-right: 10px;
+  opacity: 20%;
+}
+
+#hidepass_btn {
+  border: none;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#hidepass_img {
+  width: 22px;
+  margin-right: 12px;
+  margin-bottom: 0.5px;
+  opacity: 50%;
+}
+
+#notif_div {
+  width: 85%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1;
+  position: fixed;
+  pointer-events: none;
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#notif_cont {
+  width: 100%;
+  height: 50px;
+  background-color: #fefefe;
+  margin-bottom: 25px;
+  display: flex;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.msg_sec {
+  background-color: #f30505;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.close_sec {
+  background-color: #f30505;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+}
+
+#msg_lbl {
+  margin-left: 15px;
+  color: #fefefe;
+}
+
+#notifclose_btn {
+  margin-right: 5px;
+  border: none;
+  background-color: transparent;
+  pointer-events: all;
+}
+
+.x_icon {
+  width: 20px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(240deg)
+    brightness(102%) contrast(102%);
+}
+
+/* landscape not available */
+@media screen and (max-width: 1024px) and (min-width: 768px),
+  screen and (max-width: 767px) and (orientation: landscape) {
+  body {
+    display: none;
+  }
+}
