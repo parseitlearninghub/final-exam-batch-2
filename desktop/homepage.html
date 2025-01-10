@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="parseroom.css" />
+  </head>
+  <body>
+    <!-- Loading Animation -->
+    <div id="loading_animation_div">
+      <img id="loading_animation_gif" src="assets/loading_animation.gif" />
+      <h1 id="parsing_lbl">Parsing...</h1>
+    </div>
+    <div class="check_animation_div" id="check_animation_div">
+      <img src="assets/check-animation.gif" class="check-animation" />
+    </div>
+
+    <div id="loading_animation_div_processing">
+      <img id="loading_animation_gif" src="assets/loading_animation.gif" />
+      <h1 id="parsing_lbl">Parsing...</h1>
+    </div>
+    <section class="home-navigation">
+      <div class="home-navigation-top">
+        <div class="lobby-icon-wrapper" id="homelobby_btnx">
+          <img
+            class="homelobby_icon"
+            src="assets/icons/house-solid.svg"
+            alt=""
+            id="homelobby_imgx"
+          />
+          <span class="homelobby_icon_lbl" id="homelobby_lblx"></span>
+        </div>
+        <div class="lobby-icon-wrapper" id="homehonors_btn">
+          <img
+            class="homelobby_icon"
+            src="assets/icons/medal-solid.svg"
+            alt=""
+            id="homehonors_img"
+          />
+          <span class="homelobby_icon_lbl" id="homehonors_lbl"></span>
+        </div>
+        <div class="lobby-icon-wrapper" id="homeshare_btn">
+          <img
+            class="homelobby_icon"
+            src="assets/icons/bullhorn-solid.svg"
+            alt=""
+            id="homeshare_img"
+          />
+          <span class="homelobby_icon_lbl" id="homeshare_lbl"></span>
+        </div>
+        <div class="lobby-icon-wrapper" id="homequiz_btn">
+          <img
+            class="homelobby_icon"
+            src="assets/icons/user-graduate-solid.svg"
+            alt=""
+            id="homequiz_img"
+          />
+          <span class="homelobby_icon_lbl" id="homequiz_lbl"></span>
+        </div>
+      </div>
+      <div class="home-navigation-bottom">
+        <div class="lobby-icon-wrapper" id="">
+          <img
+            class="homelobby_icon"
+            src="assets/icons/gear-solid.svg"
+            alt=""
+            id="homelobby_imgx"
+          />
+          <span class="homelobby_icon_lbl" id=""></span>
+        </div>
+        <div class="lobby-icon-wrapper" id="">
+          <img
+            class="homelobby_icon"
+            src="assets/icons/power-off-solid.svg"
+            alt=""
+            id="homelobby_imgx"
+          />
+          <span class="homelobby_icon_lbl" id=""></span>
+        </div>
+      </div>
+    </section>
+    <section class="home-menu">
+      <!-- Announcements -->
+      <div class="allannouncement-div" id="allannouncement-div">
+        <div class="allannouncement-frame">
+          <div class="allannouncement-header">
+            <span class="allannouncement-header-lbl">All Announcements </span>
+            <img
+              class="top-left-iconimg-default allannouncement-header-close"
+              src="assets/icons/circle-xmark-solid.svg"
+              id="allannouncement-close"
+            />
+          </div>
+          <div class="allannouncement-body" id="allannouncement-body"></div>
+        </div>
+      </div>
+
+      <!-- Homepage -->
+      <div class="popupDefault" id="homepage_div">
+        <section class="body_section" id="body_section">
+          <section class="body-nav-wrapper" id="home_all_sec">
+            <div class="announcement-div" id="announcement-div">
+              <div class="xdate">
+                <a id="date_announcement_lbl"></a>
+                <a id="time_announcement_lbl"></a>
+              </div>
+              <div class="xannounce">
+                <a id="announcement_lbl"></a>
+              </div>
+            </div>
+            <div class="search-default-div" id="search-parseclass-div">
+              <img
+                class="search-default-img"
+                src="assets/icons/magnifying-glass-solid.svg"
+                alt=""
+                id="searchparseclass_img"
+              />
+              <input
+                class="search-default-txt"
+                type="text"
+                id="searchparseclass_txt"
+                placeholder="Search ParseClass"
+              />
+            </div>
+            <div id="class-sort">
+              <div class="class-sort-container">
+                <select id="class-sort-dropdown" class="class-sort-dropdown">
+                  <option value="all" selected>All</option>
+                  <option value="year-lvl-1">Freshman</option>
+                  <option value="year-lvl-2">Sophomore</option>
+                  <option value="year-lvl-3">Junior</option>
+                  <option value="year-lvl-4">Senior</option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="parseclass-default-div"
+              id="parseclass-default-div"
+            ></div>
+            <div class="" id="notyetstarted_div">
+              <img
+                class="sem-bg-img"
+                src="assets/sem_bg_600px.png"
+                alt=""
+                id="sem-bg-img"
+              />
+            </div>
+          </section>
+        </section>
+      </div>
+    </section>
+    <section class="home-room">
+      <img
+        src="assets/parseit_icon.png"
+        alt=""
+        class="room-img"
+        id="room-img"
+      />
+
+      <div
+        class="home-parseroom-div"
+        id="home-parseroom-div"
+        style="display: none"
+      >
+        <div class="parseroom-header" id="parseroom-header">
+          <section class="header-left" id="header-left">
+            <section class="parseroomName">
+              <span class="parsecode" id="parsecode"></span>
+              <span class="parsename" id="parsename"></span>
+            </section>
+          </section>
+        </div>
+        <div class="parseroom-body" id="parseroom-body">
+          <div class="parseroom-body-wrapper" id="parseroom-body-wrapper"></div>
+        </div>
+        <div class="parseroom-footer" id="parseroom-footer">
+          <textarea
+            class="parsermessage-txt"
+            id="parsermessage-txt"
+            placeholder="Send Message"
+            oninput="this.style.height = ''; this.style.height = this.scrollHeight +'px';"
+          ></textarea>
+          <img
+            id="sendmessage-btn"
+            class="sendmessage-btn"
+            src="assets/icons/paper-plane-solid.svg"
+            alt=""
+          />
+          <img
+            id="whispermessage-btn"
+            class="whispermessage-btn"
+            src="assets/icons/paper-plane-solid.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="home-info">
+      <img
+        src="assets/parseit_icon.png"
+        alt=""
+        class="room-img"
+        id="info-img"
+      />
+      <section
+        class="details-parseroom-wrapper"
+        id="details-parseroom-wrapper"
+        style="display: none"
+      >
+        <div class="game-default-wrapper" id="game-2">
+          <div class="game-default-gradient">
+            <span class="game-default-span">
+              <label
+                for=""
+                class="game-header-sublbl"
+                id="cover-infodetail-instructor"
+                >Instructor Name</label
+              >
+            </span>
+          </div>
+        </div>
+
+        <div class="details-parseroom-title">Classworks</div>
+        <div class="details-parseroom-bulletin" id="check_bulletin">
+          <img
+            class="icon-details"
+            src="assets/icons/chalkboard-solid.svg"
+          />Check Bulletin
+        </div>
+        <div class="details-parseroom-title">ParseRoom Info</div>
+        <div class="details-parseroom-bulletin" id="see_members">
+          <img class="icon-details" src="assets/icons/users-solid.svg" />See
+          Members
+        </div>
+        <div class="details-parseroom-title">More Actions</div>
+        <div class="details-parseroom-monitor" id="monitor-btn">
+          <img class="icon-details" src="assets/icons/star-solid.svg" />Submit
+          Final Grade
+        </div>
+      </section>
+
+      <div class="bulletin-wrapper" id="bulletin-wrapper" style="display: none">
+        <div class="bulletin-navigation">
+          <span class="bulletin_lbl">Bulletin</span>
+          <img
+            src="assets/icons/circle-xmark-solid.svg"
+            alt=""
+            class="thumbtack_img bulletin-close-div"
+            id="bulletin-close-div"
+          />
+        </div>
+        <section class="teacher-widget-wrapper">
+          <div class="widget-wrapper" id="widget-texteditor">
+            <img
+              src="assets/icons/pen-to-square-solid.svg"
+              alt=""
+              class="widget-img"
+            />
+          </div>
+          <div class="widget-wrapper" id="widget-pdf">
+            <img
+              src="assets/icons/file-solid.svg"
+              alt=""
+              class="widget-img-file"
+            />
+          </div>
+        </section>
+        <div class="bulletin-body">
+          <section class="bulletin-body-header">
+            <button id="bulletin_assignment">Assignments</button>
+            <button id="bulletin_announcement">Materials</button>
+          </section>
+
+          <section class="bulletin-info">
+            <div class="bulletin-info-assignment" id="bulletin-assignment">
+              <section
+                class="notdone-assignment"
+                id="notdone-assignment"
+              ></section>
+              <section class="done-assignment" id="done-assignment"></section>
+
+              <section class="fillers-assignment"></section>
+            </div>
+            <div class="bulletin-info-announcement" id="bulletin-announcement">
+              <section
+                class="bullettin-materials-cont"
+                id="bullettin-materials-cont"
+              ></section>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="module" src="homepage.js"></script>
+  </body>
+</html>
