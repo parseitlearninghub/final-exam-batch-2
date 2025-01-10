@@ -1,15 +1,15 @@
 {
-  "name": "final-exam-batch-2",
+  "name": "shane",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "html-validator --file=index.html --verbos"
-  },
+  "test": "echo \"No tests specified\""
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "html-validator-cli": "^7.0.1"
+  "description": "",
+  "dependencies": {
+    "firebase": "^11.1.0"
   }
 }
