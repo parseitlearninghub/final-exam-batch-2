@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="nofeature" id="nofeature">
+      <section class="nofeature-wrapper">
+        This feature is yet to come. <br />
+        Stay tuned!
+      </section>
+    </div>
+
+    <div id="notif_div">
+      <div id="notif_cont">
+        <section class="msg_sec">
+          <label id="msg_lbl"></label>
+        </section>
+        <section class="close_sec">
+          <button id="notifclose_btn">
+            <img class="x_icon" src="assets/icons/circle-xmark-solid.svg" />
+          </button>
+        </section>
+      </div>
+    </div>
+    <div id="login_div">
+      <div id="header_login_div">
+        <img id="parseit_icon_img" src="assets/parseit_icon.png" />
+      </div>
+      <div id="body_login_div">
+        <div id="title_body_login_div">
+          <label id="title_body_login_lbl">Sign In</label>
+          <label id="subtitle_body_login_lbl">Welcome, Parsers!</label>
+        </div>
+        <div id="forms_body_login_div">
+          <div id="id_container">
+            <input id="id_txt" placeholder="Enter ID" />
+          </div>
+          <div id="password_container">
+            <input
+              id="password_txt"
+              type="password"
+              placeholder="Enter Password"
+            />
+            <button id="showpass_btn">
+              <img id="showpass_img" src="assets/icons/eye-slash-regular.svg" />
+            </button>
+            <button id="hidepass_btn">
+              <img id="hidepass_img" src="assets/icons/eye-regular.svg" />
+            </button>
+          </div>
+          <button id="login_btn">Log In</button>
+          <div id="footer_login_div">
+            <a id="forgotpass_a">Forgot Password</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="login.js"></script>
+  </body>
+</html>
